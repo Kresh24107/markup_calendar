@@ -1,0 +1,212 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font: 30px Arial sans-serif;
+  box-sizing: border-box;
+}
+
+.calendar {
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+  grid-template: repeat(4, 100px)/repeat(7, 100px);
+  grid-auto-rows: 100px;
+  grid-gap: 1px;
+}
+
+.calendar > div {
+  position: relative;
+  background-color: #eee;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.calendar > div:nth-child(n+29) {
+  display: none;
+}
+
+.calendar > div:hover {
+  background-color: pink;
+  transform: translateY(-20px);
+}
+
+.calendar-29 > div:nth-child(-n+29) {
+  display: block;
+}
+
+.calendar-30 > div:nth-child(-n+30) {
+  display: block;
+}
+
+.calendar-31 > div:nth-child(-n+31) {
+  display: block;
+}
+
+.calendar > div::after {
+  position: absolute;
+  line-height: 100px;
+  justify-content: center;
+  left: 35px;
+}
+
+.calendar > div:nth-child(-n+9)::after {
+  left: 43px;
+}
+
+.calendar div:nth-child(1)::after {
+  content: "1";
+}
+
+.calendar div:nth-child(2)::after {
+  content: "2";
+}
+
+.calendar div:nth-child(3)::after {
+  content: "3";
+}
+
+.calendar div:nth-child(4)::after {
+  content: "4";
+}
+
+.calendar div:nth-child(5)::after {
+  content: "5";
+}
+
+.calendar div:nth-child(6)::after {
+  content: "6";
+}
+
+.calendar div:nth-child(7)::after {
+  content: "7";
+}
+
+.calendar div:nth-child(8)::after {
+  content: "8";
+}
+
+.calendar div:nth-child(9)::after {
+  content: "9";
+}
+
+.calendar div:nth-child(10)::after {
+  content: "10";
+}
+
+.calendar div:nth-child(11)::after {
+  content: "11";
+}
+
+.calendar div:nth-child(12)::after {
+  content: "12";
+}
+
+.calendar div:nth-child(13)::after {
+  content: "13";
+}
+
+.calendar div:nth-child(14)::after {
+  content: "14";
+}
+
+.calendar div:nth-child(15)::after {
+  content: "15";
+}
+
+.calendar div:nth-child(16)::after {
+  content: "16";
+}
+
+.calendar div:nth-child(17)::after {
+  content: "17";
+}
+
+.calendar div:nth-child(18)::after {
+  content: "18";
+}
+
+.calendar div:nth-child(19)::after {
+  content: "19";
+}
+
+.calendar div:nth-child(20)::after {
+  content: "20";
+}
+
+.calendar div:nth-child(21)::after {
+  content: "21";
+}
+
+.calendar div:nth-child(22)::after {
+  content: "22";
+}
+
+.calendar div:nth-child(23)::after {
+  content: "23";
+}
+
+.calendar div:nth-child(24)::after {
+  content: "24";
+}
+
+.calendar div:nth-child(25)::after {
+  content: "25";
+}
+
+.calendar div:nth-child(26)::after {
+  content: "26";
+}
+
+.calendar div:nth-child(27)::after {
+  content: "27";
+}
+
+.calendar div:nth-child(28)::after {
+  content: "28";
+}
+
+.calendar div:nth-child(29)::after {
+  content: "29";
+}
+
+.calendar div:nth-child(30)::after {
+  content: "30";
+}
+
+.calendar div:nth-child(31)::after {
+  content: "31";
+}
+
+.calendar-mon div:first-of-type {
+  grid-column: 1/2;
+}
+
+.calendar-tue div:first-of-type {
+  grid-column: 2/3;
+}
+
+.calendar-wed div:first-of-type {
+  grid-column: 3/4;
+}
+
+.calendar-thu div:first-of-type {
+  grid-column: 4/5;
+}
+
+.calendar-fri div:first-of-type {
+  grid-column: 5/6;
+}
+
+.calendar-sat div:first-of-type {
+  grid-column: 6/7;
+}
+
+.calendar-sun div:first-of-type {
+  grid-column: 7/8;
+}
+
+/*# sourceMappingURL=style.css.map */
