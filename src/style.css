@@ -1,18 +1,16 @@
 html,
 body {
   margin: 0;
-  height: 100%;
   font: 30px Arial sans-serif;
   box-sizing: border-box;
 }
 
 .calendar {
   display: grid;
-  height: 100%;
+  min-height: 100vh;
   justify-content: center;
   align-content: center;
-  align-items: stretch;
-  grid-template: repeat(4, 100px)/repeat(7, 100px);
+  grid-template: 100px/repeat(7, 100px);
   grid-auto-rows: 100px;
   grid-gap: 1px;
 }
@@ -22,7 +20,7 @@ body {
   background-color: #eee;
   border: 1px solid black;
   cursor: pointer;
-  transition: all 1s ease;
+  transition: 1s;
 }
 
 .calendar > div:nth-child(n+29) {
@@ -49,12 +47,8 @@ body {
 .calendar > div::after {
   position: absolute;
   line-height: 100px;
-  justify-content: center;
-  left: 35px;
-}
-
-.calendar > div:nth-child(-n+9)::after {
-  left: 43px;
+  width: 100%;
+  text-align: center;
 }
 
 .calendar div:nth-child(1)::after {
